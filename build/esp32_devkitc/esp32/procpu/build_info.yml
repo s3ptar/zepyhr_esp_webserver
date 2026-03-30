@@ -1,0 +1,7 @@
+west:
+  command: d:\zephyr\.venv\Scripts\west build -b esp32_devkitc/esp32/procpu d:/zephyr/esp32_dual_core_led_and_http
+    -p --build-dir d:/zephyr/esp32_dual_core_led_and_http/build/esp32_devkitc/esp32/procpu
+    -- -DBOARD_ROOT=D:\zephyr\external\zephyr -DCONFIG_DEBUG_OPTIMIZATIONS=y -DCONFIG_DEBUG_THREAD_INFO=y
+    -DEXTRA_CONF_FILE=d:/zephyr/esp32_dual_core_led_and_http/wifi.zephyr; -DEXTRA_DTC_OVERLAY_FILE=d:/zephyr/esp32_dual_core_led_and_http/esp32_devkitc.overlay;
+  topdir: d:\zephyr
+  version: 1.5.0
